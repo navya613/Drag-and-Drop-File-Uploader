@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: powderblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    width:400px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+.drop-area{
+    border:2px dashed #667eea;
+    padding:40px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.drop-area.dragover{
+    background:#f0f4ff;
+}
+
+.file-list{
+    margin-top:20px;
+    text-align:left;
+}
+
+.file-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+    padding:8px;
+    background:#f5f5f5;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.progress{
+    height:6px;
+    background:#ddd;
+    border-radius:5px;
+    margin-top:5px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    width:0%;
+    background:#667eea;
+    transition:width 0.3s;
+}
+
+.remove-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:3px 8px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:12px;
+}
